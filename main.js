@@ -52,6 +52,7 @@ submit.onclick = function () {
             productDetails[getI] = data;
             submit.value = "Create"
             mood = "create"
+            count.style.display="block";
         }
         clear()
     }
@@ -120,6 +121,7 @@ function updateData(i) {
     ads.value = productDetails[i].ads;
     discount.value = productDetails[i].discount;
     totalPrice()
+    count.style.display="none";
     category.value = productDetails[i].category;
     submit.value = "Update"
     mood = "update"
